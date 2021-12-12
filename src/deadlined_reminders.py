@@ -15,6 +15,7 @@ class DeadlinedReminder(Iterable, ABC):
     def is_due(self):
         pass
 
+    @classmethod
     def __subclasshook__(cls, subclass):
         if cls is not DeadlinedReminder:
             return NotImplemented
