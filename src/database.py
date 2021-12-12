@@ -20,4 +20,4 @@ def add_reminder(text, date):
     
     with open('reminders.csv', 'a+', newline='\n') as file:
         writer = csv.writer(file)
-        writer.writerow([reminder.text])
+        writer.writerow(reminder)
